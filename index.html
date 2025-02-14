@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulario</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Sofia+Sans+Extra+Condensed:wght@1..1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <link
+          rel="icon"
+          href="https://i.postimg.cc/d3ft3vqD/download.png"
+          type="image/x-icon"
+          />
+</head>
+<body>
+
+    <div class="header">
+        <h1>Vocabulario de la ciudad</h1>
+        <select class="dropdown" id="categorySelect" onchange="loadQuestion()">
+            <option disabled selected>Selecciona una categoría</option>
+            <option value="Money & Banking">Money & Banking</option>
+            <option value="Getting Around">Getting Around</option>
+            <option value="Mail & Correspondence">Mail & Correspondence</option>
+            <option value="Running Errands">Running Errands</option>
+            <option value="Stores & Shops">Stores & Shops</option>
+        </select>
+    </div>
+
+    <div class="navbar" id="navbar">
+        <strong>Aprendizaje Interactivo</strong>
+    </div>
+
+    <div class="content">
+        <div class="question-box" id="questionBox">
+            <!-- Las preguntas se insertarán aquí dinámicamente -->
+        </div>
+
+        <div class="flashcards">
+            <table id="flashcardTable">
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
