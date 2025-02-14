@@ -118,7 +118,7 @@ body {
     7px 7px 0px #39077aff, 
     14px 14px 0px #29005bff;
   min-height: 150px; /* Minimum height for structure */
-  max-height: 250px; /* Max height constraint */
+  max-height: 300px; /* Max height constraint */
   height: auto; /* Expands based on content */
   overflow: hidden; /* Prevents unnecessary scrolling */
 }
@@ -134,7 +134,7 @@ body {
     14px 14px 0px #29005bff;
   margin-right: 10px;
   min-height: 150px; /* Ensures minimum visibility */
-  max-height: 250px; /* Matches max height of question-box */
+  max-height: 300px; /* Matches max height of question-box */
   height: auto; /* Flexible height */
   overflow-y: auto; /* Enables vertical scrolling if content exceeds */
 }
