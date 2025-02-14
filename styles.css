@@ -1,0 +1,230 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+
+/* Header Section */
+/* Header Section - Subtle Gradient & Movement */
+.header {
+  background: linear-gradient(to right, #4b0082, #29005b); /* Deep purple gradient */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  font-family: "Outfit", sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 50px;
+}
+
+/* Header Text - Soft Floating Effect */
+.header h1 {
+  font-weight: 1000;
+  font-size: 3rem;
+  transition: transform 0.6s ease-in-out;
+  animation: floatText 3s infinite ease-in-out;
+}
+
+/* Floating Text Animation */
+@keyframes floatText {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+.dropdown {
+  background: #29005bff;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0px 5px;
+  width: 300px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5000px;
+  transition: 0.3s ease-in-out;
+  font-family: "Outfit", sans-serif;
+  border: 15px #29005bff solid;
+}
+
+.dropdown:hover {
+  scale: 1.1;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #29005bff;
+  color: #ffbae6;
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+  display: none;
+  transition: 0.3s ease-in-out;
+}
+
+/* Main Content */
+.content {
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  background: #39077aff;
+}
+
+.next-button {
+  max-width: 47%;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px auto 0;
+  border: none;
+  background: #ffbae6ff;
+  color: #29005b;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+  font-size: 15px;
+  text-align: center;
+}
+
+.next-button:hover {
+  scale: 1.1;
+}
+
+/* Adjusted Question Box */
+.question-box {
+  width: 60%;
+  padding: 20px;
+  background-color: #29005bff;
+  color: white;
+  box-shadow: 
+    7px 7px 0px #39077aff, 
+    14px 14px 0px #29005bff;
+  min-height: 150px; /* Minimum height for structure */
+  max-height: 250px; /* Max height constraint */
+  height: auto; /* Expands based on content */
+  overflow: hidden; /* Prevents unnecessary scrolling */
+}
+
+/* Adjusted Flashcards */
+.flashcards {
+  width: 60%;
+  padding: 20px;
+  background-color: #29005bff;
+  color: white;
+  box-shadow: 
+    7px 7px 0px #39077aff, 
+    14px 14px 0px #29005bff;
+  margin-right: 10px;
+  min-height: 150px; /* Ensures minimum visibility */
+  max-height: 250px; /* Matches max height of question-box */
+  height: auto; /* Flexible height */
+  overflow-y: auto; /* Enables vertical scrolling if content exceeds */
+}
+
+
+.question {
+  margin-bottom: 10px;
+  font-size: 15px;
+  text-align: center;
+  background: #ffbae6ff;
+  color: #29005b;
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+  font-weight: 800;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.options{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6%;
+}
+
+.options button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #39077aff;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.options button:hover {
+  scale: 1.05 1.1;
+}
+
+.correct {
+  background-color: green !important;
+}
+
+
+/* Correct and Incorrect Answer Styles */
+.correct {
+  background-color: green !important;
+}
+
+.incorrect {
+  background-color: darkred !important;
+}
+
+/* Flashcards Table */
+.flashcards table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+  table-layout: fixed;  /* Ensures equal width for columns */
+}
+
+/* Table Cells */
+.flashcards th, .flashcards td {
+  border: 12px solid #29005bff;  /* Thick border for strong contrast */
+  padding: 5px 10px;
+  text-align: center;  /* Centering text */
+  font-size: 15px;  /* Making text larger */
+  width: 50%;  /* Ensuring both columns take up equal space */
+}
+
+/* Left Column (Spanish Terms) */
+.flashcards td:first-child {
+  background-color: #ffbae6ff;
+  color: #29005b;
+  font-weight: bold;
+}
+
+/* Right Column (English Definitions) */
+.flashcards td:last-child {
+  background-color: #39077a;
+  color: white;
+  font-weight: bold;
+}
+
+/* Headers */
+.flashcards th {
+  background-color: #ffbae6ff;
+  color: #29005b;
+  font-weight: bold;
+}
